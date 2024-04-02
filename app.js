@@ -9,6 +9,7 @@ var app = express();
 var MongoDBUtil = require('./modules/mongodb/mongodb.module').MongoDBUtil;
 
 var UserController = require('./modules/user/user.module')().UserController;
+var indexRouter = require('./routes/index');
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -17,9 +18,13 @@ app.use(cookieParser());
 
 MongoDBUtil.init();
 
-app.use('/users', UserController);
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
-app.get('/', function (req, res) {
+app.use('/', indexRouter);
+app.use('/api/users', UserController);
+
+app.get('/api', function (req, res) {
     var pkg = require(path.join(__dirname, 'package.json'));
     res.json({
         name: pkg.name,
