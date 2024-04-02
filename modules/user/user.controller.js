@@ -10,7 +10,6 @@
         UserMiddleware.addUser,
         function (req, res) {
             res.status(201).json(req.response);
-            
         });
 
     router.get('/',
@@ -25,7 +24,7 @@
             res.status(200).json(req.response);
         });
 
-router.put('/:UserId',
+    router.put('/:UserId',
         UserMiddleware.modifyUser,
         function (req, res) {
             res.status(200).json(req.response);
