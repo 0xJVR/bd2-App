@@ -1,0 +1,4 @@
+.gitignore
+.rsyncignore
+node_modules
+config/mongodb/mongodb-config.json
