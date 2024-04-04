@@ -10,10 +10,32 @@
 </header>
 
 <main>
-    <div class="jumbotron">
-        <h1>Ingeniería de Software II: </h1>
-         <h1>Realmente ¿Cómo funciona JavaScript?</h1>
-        <p>Ahora podemos utilizar EJS como motor de vistas, pero también podríamos utilizar Jade</p>
+    <div class="myClass">
+        <h1>Users</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% users.forEach(function(user) { %>
+                    <tr>
+                        <td><%= user.username %></td>
+                        <td><%= user.email %></td>
+                        <td>
+                            <% if(user.userImg) { %>
+                                <img src="data:image/png;base64,<%= user.userImg.toString('base64') %>" alt="User Image" style="width: 100px; height: auto;">
+                            <% } else { %>
+                                No Image
+                            <% } %>
+                        </td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
     </div>
 
 </main>
