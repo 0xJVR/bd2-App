@@ -1,18 +1,19 @@
+
 (function () {
     'use strict';
 
     module.exports = {
-        addUser: addUser,
-        getUsers: getUsers,
-        getUserById: getUserById,
-        modifyUser: modifyUser,
-        removeUser: removeUser
+        addPokemon: addPokemon,
+        getPokemons: getPokemons,
+        getPokemonById: getPokemonById,
+        modifyPokemon: modifyPokemon,
+        removePokemon: removePokemon
     };
    
-    var UserService = require('./user.module')().UserService;
+    var PokemonService = require('./pokemon.module')().PokemonService;
 
-    function addUser(req, res, next) {
-        UserService.createUser(req.body)
+    function addPokemon(req, res, next) {
+        PokemonService.createPokemon(req.body)
             .then(success)
             .catch(failure);
 
@@ -27,9 +28,9 @@
 
     }
 
-    function getUsers(req, res, next) {
+    function getPokemons(req, res, next) {
 
-        UserService.fetchUsers()
+        PokemonService.fetchPokemons()
             .then(success)
             .catch(failure);
 
@@ -44,9 +45,9 @@
 
     }
 
-    function getUserById(req, res, next) {
+    function getPokemonById(req, res, next) {
 
-        UserService.fetchUserById(req.params.userId)
+        PokemonService.fetchPokemonById(req.params.pokemonId)
             .then(success)
             .catch(failure);
 
@@ -61,8 +62,8 @@
 
     }
 
-function modifyUser(req, res, next) {
-        UserService.updateUser(req.params.userId, req.body)
+    function modifyPokemon(req, res, next) {
+        PokemonService.updatePokemon(req.params.pokemonId, req.body)
             .then(success)
             .catch(error);
 
@@ -76,9 +77,9 @@ function modifyUser(req, res, next) {
         }
     }
 
-    function removeUser(req, res, next) {
+    function removePokemon(req, res, next) {
 
-        UserService.deleteUser(req.params.userId)
+        PokemonService.deletePokemon(req.params.pokemonId)
             .then(success)
             .catch(error);
 
@@ -92,7 +93,5 @@ function modifyUser(req, res, next) {
         }
 
     }
-
-
 
 })();

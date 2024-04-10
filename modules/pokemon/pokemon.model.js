@@ -3,26 +3,26 @@
 
     const Schema = mongoose.Schema;
 
-    const UserSchema = new Schema({
-        username: {
+    const PokemonSchema = new Schema({
+        name: {
             type: String,
             required: true,
             unique: true
         },
-        email: {
+        type: {
             type: String,
             required: true,
             unique: true,
         },
-        passwordHash: {
-            type: String,
+        level: {
+            type: Number,
             required: true
         },
-        userImg: {
+        image: {
             type: Buffer,
             contentType: String,
         }
     }, { timestamps: true });
 
-    module.exports = mongoose.model('users', UserSchema);
+    module.exports = mongoose.model('pokemon', PokemonSchema);
 })();

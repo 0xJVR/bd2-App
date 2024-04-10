@@ -3,36 +3,35 @@
 
     var express = require('express');
     var router = express.Router();
-
-    var UserMiddleware = require('./user.module')().UserMiddleware;
+    var PokemonMiddleware = require('./pokemon.module')().PokemonMiddleware;
 
     router.post('/',
-        UserMiddleware.addUser,
+        PokemonMiddleware.addPokemon,
         function (req, res) {
             res.status(201).json(req.response);
         });
 
     router.get('/',
-        UserMiddleware.getUsers,
+        PokemonMiddleware.getPokemons,
         function (req, res) {
             res.status(200).json(req.response);
         });
 
-    router.get('/:userId',
-        UserMiddleware.getUserById,
+    router.get('/:pokemonId',
+        PokemonMiddleware.getPokemonById,
         function (req, res) {
             res.status(200).json(req.response);
         });
 
-    router.put('/:UserId',
-        UserMiddleware.modifyUser,
+    router.put('/:pokemonId',
+        PokemonMiddleware.modifyPokemon,
         function (req, res) {
             res.status(200).json(req.response);
         });
 
 
-    router.delete('/:UserId',
-        UserMiddleware.removeUser,
+    router.delete('/:pokemonId',
+        PokemonMiddleware.removePokemon,
         function (req, res) {
             res.status(200).json(req.response);
         });
