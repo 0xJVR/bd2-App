@@ -13,7 +13,7 @@ var GymController = require('./modules/gym/gym.module')().GymController;
 var indexRouter = require('./routes/index');
 
 app.use(logger('dev'));
-app.use(express.json());
+app.use(express.json({limit: '5mb'}));
 app.use(express.urlencoded({extended: false}));
 app.use(cookieParser());
 
