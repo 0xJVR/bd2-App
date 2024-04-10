@@ -1,13 +1,13 @@
 var express = require('express');
 var router = express.Router();
 
-var UserService = require('../modules/user/user.module')().UserService;
+var PokemonService = require('../modules/pokemon/pokemon.module')().PokemonService;
 
 // GET home page
 router.get('/', async function(req, res, next) {
     try {
-        const users = await UserService.fetchUsers();
-        res.render('pages/index', { users: users });
+        const pokemon = await PokemonService.fetchPokemons();
+        res.render('pages/index', { pokemon: pokemon });
     } catch (error) {
         next(error);
     }
