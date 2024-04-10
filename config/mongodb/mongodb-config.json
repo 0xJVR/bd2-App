@@ -2,7 +2,7 @@
   "mongodb": {
     "server": "localhost:27017",
     "database": "ApiExpress",
-    "user": "PokemonAdmin",
-    "password": "12345678"
+    "user": null,
+    "password": null
   }
 }
