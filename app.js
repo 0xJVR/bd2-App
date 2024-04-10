@@ -9,6 +9,7 @@ var app = express();
 var MongoDBUtil = require('./modules/mongodb/mongodb.module').MongoDBUtil;
 
 var PokemonController = require('./modules/pokemon/pokemon.module')().PokemonController;
+var GymController = require('./modules/gym/gym.module')().GymController;
 var indexRouter = require('./routes/index');
 
 app.use(logger('dev'));
@@ -23,6 +24,8 @@ app.set('view engine', 'ejs');
 
 app.use('/', indexRouter);
 app.use('/api/pokemon', PokemonController);
+app.use('/api/gym', GymController);
+
 
 app.get('/api', function (req, res) {
     var pkg = require(path.join(__dirname, 'package.json'));

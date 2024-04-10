@@ -1,9 +1,9 @@
 (function () {
-    const mongoose = require('mongoose');
 
+    const mongoose = require('mongoose');
     const Schema = mongoose.Schema;
 
-    const PokemonSchema = new Schema({
+    const GymSchema = new Schema({
         name: {
             type: String,
             required: true,
@@ -12,11 +12,17 @@
         type: {
             type: String,
             required: true,
-           
+            
         },
-        level: {
-            type: Number,
-            required: true
+        place: {
+            type: String,
+            required: true,
+            unique: true
+        },
+        bossname:{
+            type: String,
+            required: true,
+            unique:true
         },
         image: {
             type: Buffer,
@@ -24,5 +30,5 @@
         }
     }, { timestamps: true });
 
-    module.exports = mongoose.model('pokemon', PokemonSchema);
+    module.exports = mongoose.model('gym', GymSchema);
 })();
