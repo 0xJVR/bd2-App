@@ -19,7 +19,7 @@
                 Filter
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <form class="form">
+                    <form class="form px-4 py-3">
                         <div class="form-group">
                         <label>Tipo</label>
                         <div class="form-check">
@@ -167,22 +167,18 @@
 
     <div class="container mt-3">
         <div class="row">
-
-            
-
             <div class="col-md-3 mb-3">
-                <div class="card">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addPokemonModal">
+                <div class="card d-flex align-items-center justify-content-center" style="height: 100%;">
+                    <button type="button" class="btn btn-primary" style="width: 100%; height: 100%; font-size: 46px;" data-toggle="modal" data-target="#addPokemonModal">
                         +
                     </button>
                 </div>
             </div>
-
-            <% pokemon.forEach(function(user) { %>
+            <% pokemon.forEach(function(pokemon) { %>
                 <div class="col-md-3 mb-3">
                     <div class="card">
                         <% if(pokemon.image) { %>
-                            <img src="data:image/png;base64,<%= user.userImg.toString('base64') %>" class="card-img-top" loading="lazy">
+                            <img src="data:image/png;base64,<%= pokemon.image.toString('base64') %>" class="card-img-top" loading="lazy">
                         <% } else { %>
                             No Image
                         <% } %>
