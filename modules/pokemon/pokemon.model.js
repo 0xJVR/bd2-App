@@ -19,7 +19,7 @@
             required: true
         },
         image: {
-            type: Buffer,
+            type: String,
             contentType: String,
         }
     }, { timestamps: true });
