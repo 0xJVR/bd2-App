@@ -12,12 +12,13 @@ function submitPokemonForm() {
     if (imageFile && imageFile.size > 0) {
         const reader = new FileReader();
         reader.onload = function(loadEvent) {
-            pokemonData.image = loadEvent.target.result;  // This will be the base64 encoded image
+            const base64Image = loadEvent.target.result.split(',')[1];
+            pokemonData.image = base64Image;
             sendPokemonData(pokemonData);
         };
-        reader.readAsDataURL(imageFile);  // Convert image file to base64
+        reader.readAsDataURL(imageFile);
     } else {
-        sendPokemonData(pokemonData);  // Send without image
+        sendPokemonData(pokemonData);
     }
 }
 
@@ -29,11 +30,15 @@ function sendPokemonData(pokemonData) {
         },
         body: JSON.stringify(pokemonData)
     })
-    .then(response => response.json())
-    .then(data => {
-        console.log('Success:', data);
-        // Optionally close the modal, clear the form, refresh part of your page, etc.
-        $('#addPokemonModal').modal('hide');
+    .then(response => {
+        if (response.status === 201) {
+            console.log('Success:', response);
+            window.location.reload();
+        } else if (response.status === 500) {
+            console.error('Server Error:', response);
+            alert('Error: The pokemon already exists!');
+        }
+        return response.json();
     })
     .catch((error) => {
         console.error('Error:', error);
