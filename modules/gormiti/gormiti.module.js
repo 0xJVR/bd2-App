@@ -5,10 +5,10 @@
 
     function init() {
         return {
-            PokemonController: require('./pokemon.controller'),
-            PokemonMiddleware: require('./pokemon.middleware'),
-            PokemonService: require('./pokemon.service'),
-            PokemonModel: require('./pokemon.model')
+            GormitiController: require('./gormiti.controller'),
+            GormitiMiddleware: require('./gormiti.middleware'),
+            GormitiService: require('./gormiti.service'),
+            GormitiModel: require('./gormiti.model')
         }
     }
 

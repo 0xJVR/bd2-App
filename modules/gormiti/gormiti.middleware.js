@@ -2,17 +2,17 @@
     'use strict';
 
     module.exports = {
-        addPokemon: addPokemon,
-        getPokemons: getPokemons,
-        getPokemonById: getPokemonById,
-        modifyPokemon: modifyPokemon,
-        removePokemon: removePokemon
+        addGormiti: addGormiti,
+        getGormitis: getGormitis,
+        getGormitiById: getGormitiById,
+        modifyGormiti: modifyGormiti,
+        removeGormiti: removeGormiti
     };
    
-    var PokemonService = require('./pokemon.module')().PokemonService;
+    var GormitiService = require('./gormiti.module')().GormitiService;
 
-    function addPokemon(req, res, next) {
-        PokemonService.createPokemon(req.body)
+    function addGormiti(req, res, next) {
+        GormitiService.createGormiti(req.body)
             .then(success)
             .catch(failure);
 
@@ -27,9 +27,9 @@
 
     }
 
-    function getPokemons(req, res, next) {
+    function getGormitis(req, res, next) {
 
-        PokemonService.fetchPokemons()
+        GormitiService.fetchGormitis()
             .then(success)
             .catch(failure);
 
@@ -44,9 +44,9 @@
 
     }
 
-    function getPokemonById(req, res, next) {
+    function getGormitiById(req, res, next) {
 
-        PokemonService.fetchPokemonById(req.params.pokemonId)
+        GormitiService.fetchGormitiById(req.params.gormitiId)
             .then(success)
             .catch(failure);
 
@@ -61,8 +61,8 @@
 
     }
 
-    function modifyPokemon(req, res, next) {
-        PokemonService.updatePokemon(req.params.pokemonId, req.body)
+    function modifyGormiti(req, res, next) {
+        GormitiService.updateGormiti(req.params.gormitiId, req.body)
             .then(success)
             .catch(error);
 
@@ -76,9 +76,9 @@
         }
     }
 
-    function removePokemon(req, res, next) {
+    function removeGormiti(req, res, next) {
 
-        PokemonService.deletePokemon(req.params.pokemonId)
+        GormitiService.deleteGormiti(req.params.gormitiId)
             .then(success)
             .catch(error);
 
