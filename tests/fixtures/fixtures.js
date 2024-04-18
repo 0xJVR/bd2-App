@@ -2,8 +2,10 @@
     'use strict';
 
     module.exports = {
-        UserFixture: require('./user/user-fixture'),
-        ErrorFixture: require('./error/error-fixture')
+        ErrorFixture: require('./error/error-fixture'),
+        GormitiFixture: require('./gormiti/gormiti-fixture'),
+        InvizimalFixture: require('./invizimal/invizimal-fixture'),
+        PokemonFixture: require('./pokemon/pokemon-fixture')
     };
 
 })();
