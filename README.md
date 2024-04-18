@@ -1,6 +1,8 @@
-# App
+# Digital Collection App
 
-A brief description of your application goes here. Explain what your app does and its main features.
+### This application is a digital collection manager for your favourite characters, such as Pokemon, Invizimal and Gormiti.
+
+![Website screenshot](docs/images/web.png)
 
 ## Getting Started
 
@@ -37,13 +39,19 @@ cd bd2-App
 npm install
 ```
 
-4. Start the application
+3. Run the tests and populate the database
+
+```bash
+npm test
+```
+
+5. Start the application
 
 ```bash
 npm start
 ```
 
-This will start the server on port 3000. The webpage will be available at `http://localhost:3000/` and the API at `http://localhost:3000/api/`.
+The service will start on port 3000. The webpage will be available at `http://localhost:3000/` and the API at `http://localhost:3000/api/`.
 
 ## Connecting into your MongoBD instance
 
@@ -51,33 +59,24 @@ Modify `config/mongodb/mongodb-config.json` to match your server configuration.
 
 In case you have authentication, create a new user for the app database with the needed privileges on mongoSH.
 
+This is how you can create a new database user for your API connection to mongoDB:
+
+```mongoSH
+use ApiExpress
+```
+
+```mongoSH
+db.createUser({user:"YourApiUser", pwd:"YourApiPassword", roles:[{ role:"dbOwner", db:"ApiExpress" }] })
+```
 
 ## Using the API
 
-To interact with the API, you can use tools like [Postman](https://www.postman.com/) or `curl`.
-
-### Example: Creating a User
-
-You can create a new user by sending a POST request to `/users` endpoint.
-
-```bash
-curl -X POST http://localhost:3000/api/users \       
-  -H "Content-Type: application/json" \
-  -d '{
-    "username": "User",
-    "email": "example@example.com",
-    "passwordHash": "Password"
-  }'
-```
+To interact with the REST API, you can use tools like [Postman](https://www.postman.com/) or `curl`.
 
 ### API Endpoints
 
-Here are some of the available endpoints:
+Here are the available endpoints:
 
-- `POST /users` - Create a new user
-- `GET /users` - Retrieve all users
-- `GET /users/:userId` - Retrieve a user by their ID
-- `PUT /users/:userId` - Update a user's information
-- `DELETE /users/:userId` - Delete a user
-
-Replace `:userId` with the actual ID of the user.
+- `gormiti` - For the Gormiti collection
+- `invizimal` - For the Invizimal collection
+- `pokemon` - For the Pokemon collection
