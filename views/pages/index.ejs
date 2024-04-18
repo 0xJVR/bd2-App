@@ -2,41 +2,53 @@
 <html lang="en">
 <head>
     <%- include('../partials/head'); %>
-    <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            align-items: center; /* Align vertically center */
-            justify-content: center; /* Align horizontally center */
-        }
-        .btn-main {
-            padding: 20px 40px; /* Larger padding for bigger buttons */
-            font-size: 20px; /* Larger font size */
-            margin: 10px; /* Space between buttons */
-            width: 200px; /* Same width for all buttons */
-        }
-    </style>
 </head>
+<header>
+    <%- include('../partials/header'); %>
+</header>
 <body>
-    <div class="container text-center mt-4">
-        <div class="row">
-            <div class="col-12">
-                <h2>Colección Digital</h2>
-                <div class="button-container">
-                    <a href="/pokemon" class="btn btn-primary btn-main">Pokemon</a>
-                    <a href="/invizimal" class="btn btn-primary btn-main">Invizimal</a>
-                    <a href="/gormiti" class="btn btn-primary btn-main">Gormiti</a>
-                </div>
-            </div>
+    <div class="container text-center">
+        <h2 class="title">Colección Digital</h2>
+        <div class="button-container">
+            <a href="/pokemon" class="btn btn-primary btn-main">Pokemon</a>
+            <a href="/invizimal" class="btn btn-primary btn-main">Invizimal</a>
+            <a href="/gormiti" class="btn btn-primary btn-main">Gormiti</a>
         </div>
     </div>
-
-    <header>
-        <%- include('../partials/header'); %>
-    </header>
-    <footer>
-        <%- include('../partials/footer'); %>
-    </footer>
 </body>
+<style>
+    .title {
+        margin-bottom: 50px; /* Space between the title and buttons */
+        transition: margin-bottom 0.2s ease-in-out; /* Smooth transition for margin changes */
+    }
+
+    .container {
+        max-width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-container {
+        transition: transform 0.2s ease-in-out; /* Transition for overall container scaling */
+    }
+
+    .btn-main {
+        padding: 24px 42px;
+        font-size: 32px;
+        margin: 16px;
+        width: 320px;
+        transition: transform 0.2s ease-in-out, font-size 0.2s ease-in-out;
+    }
+
+    .btn-main:hover {
+        transform: scale(1.2);
+        font-size: 42px;
+    }
+</style>
+<footer>
+    <%- include('../partials/footer'); %>
+</footer>
 </html>

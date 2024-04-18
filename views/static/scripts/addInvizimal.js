@@ -12,8 +12,7 @@ function submitInvizimalForm() {
     if (imageFile && imageFile.size > 0) {
         const reader = new FileReader();
         reader.onload = function(loadEvent) {
-            const base64Image = loadEvent.target.result.split(',')[1];
-            invizimalData.image = base64Image;
+            invizimalData.image = loadEvent.target.result;
             sendInvizimalData(invizimalData);
         };
         reader.readAsDataURL(imageFile);

@@ -12,8 +12,7 @@ function submitGormitiForm() {
     if (imageFile && imageFile.size > 0) {
         const reader = new FileReader();
         reader.onload = function(loadEvent) {
-            const base64Image = loadEvent.target.result.split(',')[1];
-            gormitiData.image = base64Image;
+            gormitiData.image = loadEvent.target.result;
             sendGormitiData(gormitiData);
         };
         reader.readAsDataURL(imageFile);

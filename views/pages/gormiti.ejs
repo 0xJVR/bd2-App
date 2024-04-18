@@ -178,7 +178,7 @@
                 <div class="col-md-3 mb-3">
                     <div class="card">
                         <% if(gormiti.image) { %>
-                            <img src="data:image/png;base64,<%= gormiti.image.toString('base64') %>" class="card-img-top" loading="lazy">
+                            <img src="<%= gormiti.image.toString('base64') %>" class="card-img-top" loading="lazy">
                         <% } else { %>
                             No Image
                         <% } %>

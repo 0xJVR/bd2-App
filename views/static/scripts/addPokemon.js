@@ -12,8 +12,7 @@ function submitPokemonForm() {
     if (imageFile && imageFile.size > 0) {
         const reader = new FileReader();
         reader.onload = function(loadEvent) {
-            const base64Image = loadEvent.target.result.split(',')[1];
-            pokemonData.image = base64Image;
+            pokemonData.image = loadEvent.target.result;
             sendPokemonData(pokemonData);
         };
         reader.readAsDataURL(imageFile);
