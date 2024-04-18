@@ -14,9 +14,11 @@ var InvizimalFixture = require('../fixtures/invizimal/invizimal-fixture');
 var baseUri = '/api/invizimal';
 
 describe('InvizimalController', function () {
+    before(async function() {
+        await InvizimalModel.deleteMany({});
+    });
 
     describe("POST " + baseUri, function () {
-        InvizimalModel.deleteMany({});
         it('should add new invizimals', async function () {
             const requests = InvizimalFixture.invizimals.map(invizimal => {
                 return request(app)

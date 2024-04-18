@@ -14,9 +14,11 @@ var GormitiFixture = require('../fixtures/gormiti/gormiti-fixture');
 var baseUri = '/api/gormiti';
 
 describe('GormitiController', function () {
+    before(async function() {
+        await GormitiModel.deleteMany({});
+    });
 
     describe("POST " + baseUri, function () {
-        GormitiModel.deleteMany({});
         it('should add new gormitis', async function () {
             const requests = GormitiFixture.gormitis.map(gormiti => {
                 return request(app)
