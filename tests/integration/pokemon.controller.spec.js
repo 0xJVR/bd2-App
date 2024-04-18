@@ -14,9 +14,11 @@ var PokemonFixture = require('../fixtures/pokemon/pokemon-fixture');
 var baseUri = '/api/pokemon';
 
 describe('PokemonController', function () {
+    before(async function() {
+        await PokemonModel.deleteMany({});
+    });
 
     describe("POST " + baseUri, function () {
-        PokemonModel.deleteMany({});
         it('should add new pokemons', async function () {
             const requests = PokemonFixture.pokemons.map(pokemon => {
                 return request(app)
