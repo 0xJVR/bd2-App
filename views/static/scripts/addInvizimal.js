@@ -1,8 +1,8 @@
-function submitPokemonForm() {
-    const form = document.getElementById('newPokemonForm');
+function submitInvizimalForm() {
+    const form = document.getElementById('newInvizimalForm');
     const formData = new FormData(form);
 
-    const pokemonData = {
+    const invizimalData = {
         name: formData.get('name'),
         type: formData.get('type'),
         level: parseInt(formData.get('level'), 10)
@@ -12,22 +12,22 @@ function submitPokemonForm() {
     if (imageFile && imageFile.size > 0) {
         const reader = new FileReader();
         reader.onload = function(loadEvent) {
-            pokemonData.image = loadEvent.target.result;
-            sendPokemonData(pokemonData);
+            invizimalData.image = loadEvent.target.result;
+            sendInvizimalData(invizimalData);
         };
         reader.readAsDataURL(imageFile);
     } else {
-        sendPokemonData(pokemonData);
+        sendInvizimalData(invizimalData);
     }
 }
 
-function sendPokemonData(pokemonData) {
-    fetch('/api/pokemon/', {
+function sendInvizimalData(invizimalData) {
+    fetch('/api/invizimal/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(pokemonData)
+        body: JSON.stringify(invizimalData)
     })
     .then(response => {
         if (response.status === 201) {
@@ -35,7 +35,7 @@ function sendPokemonData(pokemonData) {
             window.location.reload();
         } else if (response.status === 500) {
             console.error('Server Error:', response);
-            alert('Error: The pokemon already exists!');
+            alert('Error: The invizimal already exists!');
         }
         return response.json();
     })

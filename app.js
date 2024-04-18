@@ -9,7 +9,7 @@ var app = express();
 var MongoDBUtil = require('./modules/mongodb/mongodb.module').MongoDBUtil;
 
 var PokemonController = require('./modules/pokemon/pokemon.module')().PokemonController;
-var InvizimalController = require('./modules/invizimals/invizimal.module')().InvizimalController;
+var InvizimalController = require('./modules/invizimal/invizimal.module')().InvizimalController;
 var GormitiController = require('./modules/gormiti/gormiti.module')().GormitiController;
 var indexRouter = require('./routes/index');
 
@@ -27,7 +27,7 @@ app.use(express.static('views/static/'));
 
 app.use('/', indexRouter);
 app.use('/api/pokemon', PokemonController);
-app.use('/api/invizimals', InvizimalController);
+app.use('/api/invizimal', InvizimalController);
 app.use('/api/gormiti', GormitiController);
 
 

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+<header>
+    <%- include('../partials/header'); %>
+</header>
+
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-8">
+                <h2>Tus pokemons</h2>
+            </div>
+            <div class="dropdown filter">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Filter
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <form class="form px-4 py-3">
+                        <div class="form-group">
+                        <label>Tipo</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="Fire">
+                            <label class="form-check-label" for="Fire">
+                            Fire
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="Water">
+                            <label class="form-check-label" for="Water">
+                            Water
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="Grass">
+                            <label class="form-check-label" for="Grass">
+                            Grass
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="Electric">
+                            <label class="form-check-label" for="Electric">
+                            Electric
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="Psychic">
+                            <label class="form-check-label" for="Psychic">
+                            Psychic
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="Ice">
+                            <label class="form-check-label" for="Ice">
+                            Ice
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="Dragon">
+                            <label class="form-check-label" for="Dragon">
+                            Dragon
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="Dark">
+                            <label class="form-check-label" for="Dark">
+                            Dark
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="Fairy">
+                            <label class="form-check-label" for="Fairy">
+                            Fairy
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="Normal">
+                            <label class="form-check-label" for="Normal">
+                            Normal
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="Fighting">
+                            <label class="form-check-label" for="Fighting">
+                            Fighting
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="Poison">
+                            <label class="form-check-label" for="Poison">
+                            Poison
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="Ground">
+                            <label class="form-check-label" for="Ground">
+                            Ground
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="Rock">
+                            <label class="form-check-label" for="Rock">
+                            Rock
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="Bug">
+                            <label class="form-check-label" for="Bug">
+                            Bug
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="Ghost">
+                            <label class="form-check-label" for="Ghost">
+                            Ghost
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="Steel">
+                            <label class="form-check-label" for="Steel">
+                            Steel
+                            </label>
+                        </div>
+                        </div>
+                        <div class="form-group">
+                        <label>Score</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="score5">
+                            <label class="form-check-label" for="score5">
+                                ★★★★★
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="score4">
+                            <label class="form-check-label" for="score4">
+                                ★★★★☆
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="score3">
+                            <label class="form-check-label" for="score3">
+                                ★★★☆☆
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="score2">
+                            <label class="form-check-label" for="score2">
+                                ★★☆☆☆
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="score1">
+                            <label class="form-check-label" for="score1">
+                                ★☆☆☆☆
+                            </label>
+                        </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Apply</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-3 mb-3">
+                <div class="card d-flex align-items-center justify-content-center" style="height: 100%;">
+                    <button type="button" class="btn btn-primary" style="width: 100%; height: 100%; font-size: 46px;" data-toggle="modal" data-target="#addPokemonModal">
+                        +
+                    </button>
+                </div>
+            </div>
+            <% pokemon.forEach(function(pokemon) { %>
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <% if(pokemon.image) { %>
+                            <img src="<%= pokemon.image.toString('base64') %>" class="card-img-top" loading="lazy">
+                        <% } else { %>
+                            No Image
+                        <% } %>
+                        <div class="card-body">
+                            <h5 class="card-title"><%= pokemon.name %></h5>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="card-text mb-0"><%= pokemon.level %></p>
+                                <p class="card-text mb-0"><%= pokemon.type %></p>
+                                <button class="btn btn-outline-primary like-button">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+
+    <div class="modal fade" id="addPokemonModal" tabindex="-1" role="dialog" aria-labelledby="addPokemonModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addPokemonModalLabel">Add New Pokémon</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="newPokemonForm">
+                        <div class="form-group">
+                            <label for="pokemonName">Name</label>
+                            <input type="text" class="form-control" id="pokemonName" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pokemonType">Type</label>
+                            <input type="text" class="form-control" id="pokemonType" name="type" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pokemonLevel">Level</label>
+                            <input type="number" class="form-control" id="pokemonLevel" name="level" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pokemonImage">Image (optional)</label>
+                            <input type="file" class="form-control-file" id="pokemonImage" name="image">
+                        </div>
+                        <button type="button" onclick="submitPokemonForm()" class="btn btn-primary">Add Pokémon</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<footer>
+    <%- include('../partials/footer'); %>
+</footer>
+
+</html>
