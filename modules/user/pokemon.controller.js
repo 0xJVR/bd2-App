@@ -3,35 +3,36 @@
 
     var express = require('express');
     var router = express.Router();
-    var GormitiMiddleware = require('./gormiti.module')().GormitiMiddleware;
+
+    var pokemonMiddleware = require('./pokemon.module')().pokemonMiddleware;
 
     router.post('/',
-        GormitiMiddleware.addGormiti,
+        pokemonMiddleware.addPokemon,
         function (req, res) {
             res.status(201).json(req.response);
         });
 
     router.get('/',
-        GormitiMiddleware.getGormitis,
+        pokemonMiddleware.getPokemons,
         function (req, res) {
             res.status(200).json(req.response);
         });
 
-    router.get('/:gormitiId',
-        GormitiMiddleware.getGormitiById,
+    router.get('/:pokemonId',
+        pokemonMiddleware.getPokemonById,
         function (req, res) {
             res.status(200).json(req.response);
         });
 
-    router.put('/:gormitiId',
-        GormitiMiddleware.modifyGormiti,
+    router.put('/:pokemonId',
+        pokemonMiddleware.modifyPokemon,
         function (req, res) {
             res.status(200).json(req.response);
         });
 
 
-    router.delete('/:gormitiId',
-        GormitiMiddleware.removeGormiti,
+    router.delete('/:pokemonId',
+        pokemonMiddleware.removeUser,
         function (req, res) {
             res.status(200).json(req.response);
         });

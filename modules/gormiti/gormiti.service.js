@@ -2,38 +2,38 @@
     'use strict';
 
     module.exports = {
-        createPokemon: createPokemon,
-        fetchPokemons: fetchPokemons,
-        fetchPokemonById: fetchPokemonById,
-        updatePokemon: updatePokemon,
-        deletePokemon: deletePokemon
+        createGormiti: createGormiti,
+        fetchGormitis: fetchGormitis,
+        fetchGormitiById: fetchGormitiById,
+        updateGormiti: updateGormiti,
+        deleteGormiti: deleteGormiti
     };
 
-    var PokemonModel = require('./pokemon.module')().PokemonModel;
+    var GormitiModel = require('./gormiti.module')().GormitiModel;
 
-    function createPokemon(pokemon) {
-        return PokemonModel.create(pokemon);
+    function createGormiti(gormiti) {
+        return GormitiModel.create(gormiti);
     }
 
-    function fetchPokemons() {
-        return PokemonModel.find({})
+    function fetchGormitis() {
+        return GormitiModel.find({})
             .exec();
     }
 
-    function fetchPokemonById(pokemonId) {
-        return PokemonModel.findById(pokemonId)
+    function fetchGormitiById(gormitiId) {
+        return GormitiModel.findById(gormitiId)
             .exec();
     }
 
-    function updatePokemon(pokemonId, pokemon) {
-        return PokemonModel
-            .findByIdAndUpdate(pokemonId, pokemon, {new: true})
+    function updateGormiti(gormitiId, gormiti) {
+        return GormitiModel
+            .findByIdAndUpdate(gormitiId, gormiti, {new: true})
             .exec();
     }
 
-    function deletePokemon(pokemonId) {
-        return PokemonModel
-            .findByIdAndRemove(pokemonId)
+    function deleteGormiti(gormitiId) {
+        return GormitiModel
+            .findByIdAndRemove(gormitiId)
             .exec();
     }
 })();

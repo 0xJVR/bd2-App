@@ -2,17 +2,17 @@
     'use strict';
 
     module.exports = {
-        addGormiti: addGormiti,
-        getGormitis: getGormitis,
-        getGormitiById: getGormitiById,
-        modifyGormiti: modifyGormiti,
-        removeGormiti: removeGormiti
+        addInvizimal: addInvizimal,
+        getInvizimals: getInvizimals,
+        getInvizimalById: getInvizimalById,
+        modifyInvizimal: modifyInvizimal,
+        removeInvizimal: removeInvizimal
     };
    
-    var GormitiService = require('./gormiti.module')().GormitiService;
+    var InvizimalService = require('./invizimal.module')().InvizimalService;
 
-    function addGormiti(req, res, next) {
-        GormitiService.createGormiti(req.body)
+    function addInvizimal(req, res, next) {
+        InvizimalService.createInvizimal(req.body)
             .then(success)
             .catch(failure);
 
@@ -27,9 +27,9 @@
 
     }
 
-    function getGormitis(req, res, next) {
+    function getInvizimals(req, res, next) {
 
-        GormitiService.fetchGormitis()
+        InvizimalService.fetchInvizimals()
             .then(success)
             .catch(failure);
 
@@ -44,9 +44,9 @@
 
     }
 
-    function getGormitiById(req, res, next) {
+    function getInvizimalById(req, res, next) {
 
-        GormitiService.fetchGormitiById(req.params.gormitiId)
+        InvizimalService.fetchInvizimalById(req.params.invizimalId)
             .then(success)
             .catch(failure);
 
@@ -61,8 +61,8 @@
 
     }
 
-    function modifyGormiti(req, res, next) {
-        GormitiService.updateGormiti(req.params.gormitiId, req.body)
+    function modifyInvizimal(req, res, next) {
+        InvizimalService.updateInvizimal(req.params.invizimalId, req.body)
             .then(success)
             .catch(error);
 
@@ -76,9 +76,9 @@
         }
     }
 
-    function removeGormiti(req, res, next) {
+    function removeInvizimal(req, res, next) {
 
-        GormitiService.deleteGormiti(req.params.gormitiId)
+        InvizimalService.deleteInvizimal(req.params.invizimalId)
             .then(success)
             .catch(error);
 
