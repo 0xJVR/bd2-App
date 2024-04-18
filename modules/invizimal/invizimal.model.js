@@ -3,7 +3,7 @@
 
     const Schema = mongoose.Schema;
 
-    const PokemonSchema = new Schema({
+    const InvizimalSchema = new Schema({
         name: {
             type: String,
             required: true,
@@ -24,5 +24,5 @@
         }
     }, { timestamps: true });
 
-    module.exports = mongoose.model('pokemon', PokemonSchema);
+    module.exports = mongoose.model('invizimal', InvizimalSchema);
 })();

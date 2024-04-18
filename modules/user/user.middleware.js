@@ -3,16 +3,16 @@
 
     module.exports = {
         addPokemon: addPokemon,
-        getPokemons: getPokemons,
+        getPokemon: getPokemon,
         getPokemonById: getPokemonById,
         modifyPokemon: modifyPokemon,
         removePokemon: removePokemon
     };
    
-    var PokemonService = require('./pokemon.module')().PokemonService;
+    var PoService = require('./user.module')().UserService;
 
-    function addPokemon(req, res, next) {
-        PokemonService.createPokemon(req.body)
+    function addUser(req, res, next) {
+        UserService.createUser(req.body)
             .then(success)
             .catch(failure);
 
@@ -27,9 +27,9 @@
 
     }
 
-    function getPokemons(req, res, next) {
+    function getUsers(req, res, next) {
 
-        PokemonService.fetchPokemons()
+        UserService.fetchUsers()
             .then(success)
             .catch(failure);
 
@@ -44,9 +44,9 @@
 
     }
 
-    function getPokemonById(req, res, next) {
+    function getUserById(req, res, next) {
 
-        PokemonService.fetchPokemonById(req.params.pokemonId)
+        UserService.fetchUserById(req.params.userId)
             .then(success)
             .catch(failure);
 
@@ -61,8 +61,8 @@
 
     }
 
-    function modifyPokemon(req, res, next) {
-        PokemonService.updatePokemon(req.params.pokemonId, req.body)
+function modifyUser(req, res, next) {
+        UserService.updateUser(req.params.userId, req.body)
             .then(success)
             .catch(error);
 
@@ -76,9 +76,9 @@
         }
     }
 
-    function removePokemon(req, res, next) {
+    function removeUser(req, res, next) {
 
-        PokemonService.deletePokemon(req.params.pokemonId)
+        UserService.deleteUser(req.params.userId)
             .then(success)
             .catch(error);
 
@@ -92,5 +92,7 @@
         }
 
     }
+
+
 
 })();
