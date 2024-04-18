@@ -1,0 +1,62 @@
+[
+{
+"level": 1,
+"nombre":"Gheos",
+"tipo":"Tierra",
+"imagen":"https://static.wikia.nocookie.net/gormiti/images/0/06/Gormiti-toy-energheia-gheos.jpg/revision/latest?cb=20210618131459"
+},
+{
+"level": 2,
+"nombre":"Earthshaker",
+"tipo":"Tierra",
+"imagen":"https://static.wikia.nocookie.net/gormiti/images/5/50/Gormiti-toy-energheia-earthshaker.jpg/revision/latest?cb=20210618131449"
+},
+{
+"level": 3,
+"nombre":"Steelback",
+"tipo":"Tierra",
+"imagen":"https://static.wikia.nocookie.net/gormiti/images/a/ab/Gormiti-toy-energheia-steelback.jpg/revision/latest/scale-to-width-down/350?cb=20210618131530"
+},
+{
+"level": 4,
+"nombre":"The Hideoutfinder",
+"tipo":"Tierra",
+"imagen":"https://static.wikia.nocookie.net/gormiti/images/7/7f/Gormiti-toy-energheia-hideoutfinder.jpg/revision/latest/scale-to-width-down/350?cb=20210618131506"
+},
+{
+"level": 5,
+"nombre":"Tasaru",
+"tipo":"Bosque",
+"imagen":"https://static.wikia.nocookie.net/gormiti/images/e/e4/Gormiti-toy-energheia-tasarau.jpg/revision/latest?cb=20210618131532"
+},
+{
+"level": 6,
+"nombre":"Branchtearer",
+"tipo":"Bosque",
+"imagen":"https://static.wikia.nocookie.net/gormiti/images/3/34/Gormiti-toy-energheia-branchtearer.jpg/revision/latest?cb=20210618131444"
+},
+{
+"level": 7,
+"nombre":"Poivrons",
+"tipo":"Mar",
+"imagen":"https://static.wikia.nocookie.net/gormiti/images/2/2e/Gormiti-toy-energheia-poivrons.jpg/revision/latest?cb=20210618131525"
+},
+{
+"level": 8,
+"nombre":"Noctis",
+"tipo":"Aire",
+"imagen":"https://static.wikia.nocookie.net/gormiti/images/a/a8/Gormiti-toy-energheia-noctis.jpg/revision/latest?cb=20210623115630"
+},
+{
+"level": 9,
+"nombre":"Lavion",
+"tipo":"Lava",
+"imagen":"https://static.wikia.nocookie.net/gormiti/images/4/4d/Gormiti-toy-energheia-lavion.jpg/revision/latest?cb=20210618131510"
+},
+{
+"level": 10,
+"nombre":"Magmion",
+"tipo":"Magma",
+"imagen":"https://static.wikia.nocookie.net/gormiti/images/7/7e/Magmion_I.webp/revision/latest?cb=20220724111425"
+}
+]

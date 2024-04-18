@@ -1,0 +1,602 @@
+[
+{
+"level":"1",
+"nombre":"Bulbasur",
+"tipo": "Planta",
+"imagen":"https://img.pokemondb.net/artwork/large/bulbasaur.jpg"
+},
+{
+"level":"2",
+"nombre":"Ivysaur",
+"tipo": "Planta",
+"imagen":"https://img.pokemondb.net/artwork/large/ivysaur.jpg"
+},
+{
+"level":"3",
+"nombre":"Venusaur",
+"tipo": "Planta",
+"imagen":"https://images.wiklevelexcdn.net/mwuploads/wiklevelex/b/be/latest/20160309230456/Venusaur.png"
+},
+{
+"level":"4",
+"nombre":"Charmander",
+"tipo": "Fuego",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/5/56/Charmander.png/revision/latest?cb=20221210013209"
+},
+{
+"level":"5",
+"nombre":"Charmeleon",
+"tipo": "Fuego",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/f/fb/Charmeleon.png/revision/latest?cb=20140207202536"
+},
+{
+"level":"6",
+"nombre":"Charizard",
+"tipo": "Fuego",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/0/0a/Charizard_UNITE.png/revision/latest?cb=20210923082818"
+},
+{
+"level":"7",
+"nombre":"Squirtle",
+"tipo": "Agua",
+"imagen":"https://pm1.narvii.com/6517/c3144ab5ef8664af085a0c7f55762a4caaf0270d_hq.jpg"
+},
+{
+"level":"8",
+"nombre":"Wartortle",
+"tipo": "Agua",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/d/d7/Wartortle.png/revision/latest?cb=20140207202657"
+},
+{
+"level":"9",
+"nombre":"Blastoise",
+"tipo": "Agua",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/f/ff/Blastoise_HOME.png/revision/latest?cb=20221101164341"
+},
+{
+"level":"10",
+"nombre":"Caterpie",
+"tipo": "Bicho",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/0/05/Caterpie.png/revision/latest?cb=20170615202446"
+},
+{
+"level":"11",
+"nombre":"Metapod",
+"tipo": "Bicho",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/6/6b/Metapod.png/revision/latest?cb=20080723091759"
+},
+{
+"level":"12",
+"nombre":"Butterfree",
+"tipo": "Bicho,Volador",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/9/96/Butterfree.png/revision/latest?cb=20160703192952"
+},
+{
+"level":"13",
+"nombre":"Weedle",
+"tipo": "Bicho,Veneno",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/d/d6/Weedle.png/revision/latest?cb=20080723091802"
+},
+{
+"level":"14",
+"nombre":"Kakuna",
+"tipo": "Bicho,Veneno",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/6/63/Kakuna.png/revision/latest?cb=20080723091803"
+},
+{
+"level":"15",
+"nombre":"Beedrill",
+"tipo": "Bicho,Veneno",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/e/e7/Beedrill_HOME.png/revision/latest?cb=20221101164406"
+},
+{
+"level":"16",
+"nombre":"Plevelgey",
+"tipo": "Normal,Volador",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/b/b7/Plevelgey.png/revision/latest?cb=20080719192400"
+},
+{
+"level":"17",
+"nombre":"Plevelgeotto",
+"tipo": "Normal,Volador",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/5/57/Plevelgeotto.png/revision/latest?cb=20141214195017"
+},
+{
+"level":"18",
+"nombre":"Plevelgeot",
+"tipo": "Normal,Volador",
+"imagen":"https://www.wiklevelex.net/wiki/Archivo:Plevelgeot.png"
+},
+{
+"level":"19",
+"nombre":"Rattata",
+"tipo": "Normal",
+"imagen":"https://images.wiklevelexcdn.net/mwuploads/wiklevelex/thumb/c/c4/latest/20200307022853/Rattata.png/300px-Rattata.png"
+},
+{
+"level":"20",
+"nombre":"Raticate",
+"tipo": "Normal",
+"imagen":"https://images.wiklevelexcdn.net/mwuploads/wiklevelex/d/d6/latest/20200307022931/Raticate.png"
+},
+{
+"level":"21",
+"nombre":"Spearow",
+"tipo": "Normal,Volador",
+"imagen":"https://images.wiklevelexcdn.net/mwuploads/wiklevelex/thumb/a/a1/latest/20200307023331/Spearow.png/113px-Spearow.png"
+},
+{
+"level":"22",
+"nombre":"Fearow",
+"tipo": "Normal,Volador",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/4/41/Fearow.png/revision/latest?cb=20170617014432"
+},
+{
+"level":"23",
+"nombre":"Ekans",
+"tipo": "Veneno",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/1/11/Ekans.png/revision/latest?cb=20170617012619"
+},
+{
+"level":"24",
+"nombre":"Arbok",
+"tipo": "Veneno",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/4/4d/Arbok.png/revision/latest?cb=20170615172348"
+},
+{
+"level":"25",
+"nombre":"Pikachu",
+"tipo": "Electrico",
+"imagen":"https://www.wiklevelex.net/wiki/Archivo:Pikachu.png"
+},
+{
+"level":"26",
+"nombre":"Raichu",
+"tipo": "Electrico",
+"imagen":"https://www.wiklevelex.net/wiki/Archivo:Raichu.png"
+},
+{
+"level":"27",
+"nombre":"Sandshrew",
+"tipo": "Tierra",
+"imagen":"https://images.wiklevelexcdn.net/mwuploads/wiklevelex/thumb/d/df/latest/20230620060651/Sandshrew.png/300px-Sandshrew.png"
+},
+{
+"level":"28",
+"nombre":"Sandslash",
+"tipo": "Tierra",
+"imagen":"https://images.wiklevelexcdn.net/mwuploads/wiklevelex/thumb/1/13/latest/20230620060657/Sandslash.png/300px-Sandslash.png"
+},
+{
+"level":"29",
+"nombre":"Nleveloran",
+"tipo": "Veneno",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/c/c8/Nleveloran%E2%99%80.png/revision/latest?cb=20080909113724"
+},
+{
+"level":"30",
+"nombre":"Nlevelorina",
+"tipo": "Veneno",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/3/31/Nlevelorina.png/revision/latest?cb=20080909113735"
+},
+{
+"level":"31",
+"nombre":"Nleveloqueen",
+"tipo": "Veneno,Tierra",
+"imagen":"https://images.wiklevelexcdn.net/mwuploads/wiklevelex/thumb/4/43/latest/20230613021302/Nleveloqueen.png/300px-Nleveloqueen.png"
+},
+{
+"level":"32",
+"nombre":"Nleveloran",
+"tipo": "Veneno",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/6/60/Nleveloran%E2%99%82.png/revision/latest?cb=20080909113731"
+},
+{
+"level":"33",
+"nombre":"Nlevelorino",
+"tipo": "Veneno",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/7/7a/Nlevelorino.png/revision/latest?cb=20080909113745"
+},
+{
+"level":"34",
+"nombre":"Nleveloking",
+"tipo": "Veneno,Tierra",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/7/76/Nleveloking.png/revision/latest?cb=20220608122421"
+},
+{
+"level":"35",
+"nombre":"Clefairy",
+"tipo": "Hada",
+"imagen":"https://images.wiklevelexcdn.net/mwuploads/wiklevelex/thumb/d/d2/latest/20230717180740/Clefairy.png/300px-Clefairy.png"
+},
+{
+"level":"36",
+"nombre":"Clefable",
+"tipo": "Hada",
+"imagen":"https://images.wiklevelexcdn.net/mwuploads/wiklevelex/thumb/d/d5/latest/20230717180839/Clefable.png/300px-Clefable.png"
+},
+{
+"level":"37",
+"nombre":"Vulpix",
+"tipo": "Fuego",
+"imagen":"https://images.wiklevelexcdn.net/mwuploads/wiklevelex/thumb/8/8d/latest/20230613015324/Vulpix.png/300px-Vulpix.png"
+},
+{
+"level":"38",
+"nombre":"Ninetales",
+"tipo": "Fuego",
+"imagen":"https://images.wiklevelexcdn.net/mwuploads/wiklevelex/thumb/9/98/latest/20230613015530/Ninetales.png/300px-Ninetales.png"
+},
+{
+"level":"39",
+"nombre":"Jigglypuff",
+"tipo": "Normal,Hada",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/a/af/Jigglypuff.png/revision/latest/scale-to-wlevelth-down/350?cb=20150110232910"
+},
+{
+"level":"40",
+"nombre":"Wigglytuff",
+"tipo": "Normal,Hada",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/f/f1/Wigglytuff.png/revision/latest?cb=20220609144747"
+},
+{
+"level":"41",
+"nombre":"Zubat",
+"tipo": "Veneno,Volador",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/6/67/Zubat.png/revision/latest?cb=20080909115327"
+},
+{
+"level":"42",
+"nombre":"Golbat",
+"tipo": "Veneno,Volador",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/2/2c/Golbat.png/revision/latest?cb=20170617042709"
+},
+{
+"level":"43",
+"nombre":"Oddish",
+"tipo": "Planta,Veneno",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/d/d9/Oddish.png/revision/latest?cb=20080909113841"
+},
+{
+"level":"44",
+"nombre":"Gloom",
+"tipo": "Planta,Veneno",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/5/59/Gloom.png/revision/latest?cb=20080715114643"
+},
+{
+"level":"45",
+"nombre":"Vileplume",
+"tipo": "Planta,Veneno",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/3/32/Vileplume.png/revision/latest?cb=20080909115204"
+},
+{
+"level":"46",
+"nombre":"Paras",
+"tipo": "Bicho,Planta",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/e/ee/Paras.png/revision/latest?cb=20080909113930"
+},
+{
+"level":"47",
+"nombre":"Parasect",
+"tipo": "Bicho,Planta",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/6/62/Parasect.png/revision/latest?cb=20080909113938"
+},
+{
+"level":"48",
+"nombre":"Venonat",
+"tipo": "Bicho,Veneno",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/d/d3/Venonat.png/revision/latest?cb=20080909115146"
+},
+{
+"level":"49",
+"nombre":"Venomoth",
+"tipo": "Bicho,Veneno",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/c/c2/Venomoth.png/revision/latest?cb=20080909115136"
+},
+{
+"level":"50",
+"nombre":"Diglett",
+"tipo": "Tierra",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/7/7a/Diglett.png/revision/latest?cb=20220605144731"
+},
+{
+"level":"51",
+"nombre":"Dugtrio",
+"tipo": "Tierra",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/8/8b/Dugtrio.png/revision/latest?cb=20220605160454"
+},
+{
+"level":"52",
+"nombre":"Meowth",
+"tipo": "Normal",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/9/99/Meowth.png/revision/latest?cb=20160904210550"
+},
+{
+"level":"53",
+"nombre":"Persian",
+"tipo": "Normal",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/b/b3/Persian.png/revision/latest?cb=20080909113950"
+},
+{
+"level":"54",
+"nombre":"Psyduck",
+"tipo": "Agua",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/3/32/Psyduck.png/revision/latest?cb=20080909114656"
+},
+{
+"level":"55",
+"nombre":"Golduck",
+"tipo": "Agua",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/c/cf/Golduck.png/revision/latest?cb=20080909112056"
+},
+{
+"level":"56",
+"nombre":"Mankey",
+"tipo": "Lucha",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/8/8b/Mankey.png/revision/latest?cb=20080909112743"
+},
+{
+"level":"57",
+"nombre":"Primeape",
+"tipo": "Lucha",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/e/e0/Primeape.png/revision/latest?cb=20080909114651"
+},
+{
+"level":"58",
+"nombre":"Growlithe",
+"tipo": "Fuego",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/b/bb/Growlithe.png/revision/latest?cb=20080909112200"
+},
+{
+"level":"59",
+"nombre":"Arcanine",
+"tipo": "Fuego",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/5/50/Arcanine.png/revision/latest?cb=20150621185018"
+},
+{
+"level":"60",
+"nombre":"Poliwag",
+"tipo": "Agua",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/9/90/Poliwag.png/revision/latest?cb=20080909114356"
+},
+{
+"level":"61",
+"nombre":"Poliwhirl",
+"tipo": "Agua",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/2/24/Poliwhirl.png/revision/latest?cb=20080909114406"
+},
+{
+"level":"62",
+"nombre":"Poliwrath",
+"tipo": "Agua,Lucha",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/8/85/Poliwrath.png/revision/latest?cb=20100121081452"
+},
+{
+"level":"63",
+"nombre":"Abra",
+"tipo": "Psiquico",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/f/f6/Abra.png/revision/latest?cb=20220609150144"
+},
+{
+"level":"64",
+"nombre":"Kadabra",
+"tipo": "Psiquico",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/b/b0/Kadabra.png/revision/latest?cb=20220609155528"
+},
+{
+"level":"65",
+"nombre":"Alakazam",
+"tipo": "Psiquico",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/f/f5/Alakazam.png/revision/latest?cb=20170615171153"
+},
+{
+"level":"66",
+"nombre":"Machop",
+"tipo": "Lucha",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/2/2b/Machop.png/revision/latest?cb=20080909112724"
+},
+{
+"level":"67",
+"nombre":"Machoke",
+"tipo": "Lucha",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/c/ca/Machoke.png/revision/latest?cb=20220605161356"
+},
+{
+"level":"68",
+"nombre":"Machamp",
+"tipo": "Lucha",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/b/bf/Machamp.png/revision/latest?cb=20220605162112"
+},
+{
+"level":"69",
+"nombre":"Bellsprout",
+"tipo": "Planta,Veneno",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/d/d1/Bellsprout.png/revision/latest?cb=20170615195943"
+},
+{
+"level":"70",
+"nombre":"Weepinbell",
+"tipo": "Planta,Veneno",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/f/f9/Weepinbell.png/revision/latest?cb=20080908162518"
+},
+{
+"level":"71",
+"nombre":"Victreebel",
+"tipo": "Planta,Veneno",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/5/55/Victreebel.png/revision/latest?cb=20080909115156"
+},
+{
+"level":"72",
+"nombre":"Tentacool",
+"tipo": "Agua,Veneno",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/4/43/Tentacool.png/revision/latest?cb=20080909115035"
+},
+{
+"level":"73",
+"nombre":"Tentacruel",
+"tipo": "Agua,Veneno",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/7/78/Tentacruel.png/revision/latest?cb=20080909115045"
+},
+{
+"level":"74",
+"nombre":"Geodude",
+"tipo": "Roca,Tierra",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/1/12/Geodude.png/revision/latest?cb=20161018163121"
+},
+{
+"level":"75",
+"nombre":"Graveler",
+"tipo": "Roca,Tierra",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/b/b6/Graveler.png/revision/latest?cb=20161018163138"
+},
+{
+"level":"76",
+"nombre":"Golem",
+"tipo": "Roca,Tierra",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/c/ce/Golem.png/revision/latest?cb=20161018163156"
+},
+{
+"level":"77",
+"nombre":"Ponyta",
+"tipo": "Fuego",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/5/5f/Ponyta.png/revision/latest?cb=20220609161901"
+},
+{
+"level":"78",
+"nombre":"Rapidash",
+"tipo": "Fuego",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/0/01/Rapidash.png/revision/latest?cb=20220609180142"
+},
+{
+"level":"79",
+"nombre":"Slowpoke",
+"tipo": "Agua,Psiquico",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/9/9b/Slowpoke.png/revision/latest?cb=20220522145658"
+},
+{
+"level":"80",
+"nombre":"Slowbro",
+"tipo": "Agua,Psiquico",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/e/e1/Slowbro.png/revision/latest?cb=20220608141059"
+},
+{
+"level":"81",
+"nombre":"Magnemite",
+"tipo": "Electrico,Acero",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/8/80/Magnemite.png/revision/latest?cb=20080822131212"
+},
+{
+"level":"82",
+"nombre":"Magneton",
+"tipo": "Electrico,Acero",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/d/d1/Magneton.png/revision/latest?cb=20080715114639"
+},
+{
+"level":"83",
+"nombre":"Farfetch'd",
+"tipo": "Normal,Volador",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/b/b5/Farfetch%27d.png/revision/latest?cb=20170617014300"
+},
+{
+"level":"84",
+"nombre":"Doduo",
+"tipo": "Normal,Volador",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/9/9c/Doduo.png/revision/latest?cb=20160625153314"
+},
+{
+"level":"85",
+"nombre":"Dodrio",
+"tipo": "Normal,Volador",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/1/1a/Dodrio.png/revision/latest?cb=20080908160508"
+},
+{
+"level":"86",
+"nombre":"Seel",
+"tipo": "Agua",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/f/f1/Seel.png/revision/latest?cb=20080909114908"
+},
+{
+"level":"87",
+"nombre":"Dewgong",
+"tipo": "Agua,Hielo",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/1/1d/Dewgong.png/revision/latest?cb=20170617010118"
+},
+{
+"level":"88",
+"nombre":"Grimer",
+"tipo": "Veneno",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/d/d7/Grimer.png/revision/latest?cb=20080909112115"
+},
+{
+"level":"89",
+"nombre":"Muk",
+"tipo": "Veneno",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/8/8e/Muk.png/revision/latest?cb=20161104015531"
+},
+{
+"level":"90",
+"nombre":"Shellder",
+"tipo": "Agua",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/6/63/Shellder.png/revision/latest?cb=20080909114917"
+},
+{
+"level":"91",
+"nombre":"Cloyster",
+"tipo": "Agua,Hielo",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/7/71/Cloyster.png/revision/latest?cb=20080908160258"
+},
+{
+"level":"92",
+"nombre":"Gastly",
+"tipo": "Fantasma,Veneno",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/c/c1/Gastly.png/revision/latest?cb=20170617041942"
+},
+{
+"level":"93",
+"nombre":"Haunter",
+"tipo": "Fantasma,Veneno",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/4/41/Haunter.png/revision/latest?cb=20220609201657"
+},
+{
+"level":"94",
+"nombre":"Gengar",
+"tipo": "Fantasma,Veneno",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/f/f8/Gengar.png/revision/latest?cb=20220609203035"
+},
+{
+"level":"95",
+"nombre":"Onix",
+"tipo": "Roca,Tierra",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/b/b2/Onix.png/revision/latest?cb=20220605191615"
+},
+{
+"level":"96",
+"nombre":"Drowzee",
+"tipo": "Psiquico",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/5/5d/Drowzee.png/revision/latest?cb=20170617011458"
+},
+{
+"level":"97",
+"nombre":"Hypno",
+"tipo": "Psiquico",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/0/0e/Hypno.png/revision/latest?cb=20080909112306"
+},
+{   
+"level":"98",
+"nombre":"Krabby",
+"tipo": "Agua",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/d/da/Krabby.png/revision/latest?cb=20220609204958"
+},
+{
+"level":"99",
+"nombre":"Kingler",
+"tipo": "Agua",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/a/a4/Kingler.png/revision/latest?cb=20220605192159"
+},
+{
+"level":"100",
+"nombre":"Voltorb",
+"tipo": "Electrico",
+"imagen":"https://static.wikia.nocookie.net/espokemon/images/8/80/Voltorb.png/revision/latest?cb=20090916184937"
+}
+]
